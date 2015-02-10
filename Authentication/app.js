@@ -38,7 +38,7 @@ var app = express();
 	app.use(passport.session());
 	app.use(methodOverride('X-HTTP-Method-Override'));
 	app.engine('handlebars', hbs.engine);
-	app.set('views', __dirname + '\\views');
+	app.set('views', __dirname + '/views');
 	app.set('view engine', 'handlebars');
 
 
