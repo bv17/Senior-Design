@@ -24,29 +24,29 @@ var hbs = exphbs.create({
 
 //App configuration settings
 var app = express();
-	app.set('views', path.join(__dirname, 'views'));
+	app.set('views', path.join(__dirname, '/views'));
 	app.use(favicon(__dirname + '/public/favicon.ico'));
 	app.use(logger('dev'));
 	app.use(bodyParser.json());
 	app.use(bodyParser.urlencoded({ extended: false }));
 	app.use(cookieParser());
-	app.use('/public', express.static(__dirname + '/public'));
+	app.use(express.static(__dirname + '/public'));
 	app.use('/', routes);
 	app.use('/users', users);
 	app.use(express.static(path.join(__dirname, '/public')));
 	app.use(passport.initialize());
 	app.use(passport.session());
-    app.use(session({secret:'MySecret'}));
-    app.use(methodOverride('X-HTTP-Method-Override'));
+	app.use(methodOverride('X-HTTP-Method-Override'));
 	app.engine('handlebars', hbs.engine);
 	app.set('views', __dirname + '\\views');
 	app.set('view engine', 'handlebars');
+
 
 //Google Project Credentials	
 passport.use(new googleStrategy({
     clientID: '1071634343206-k1udbc79djnhv5rl6vfl9d08onck216p.apps.googleusercontent.com',
     clientSecret: 'rxOy49TNSrvKz_NSNqtYmmIN',
-    callbackURL: "http://localhost:8080/auth/google/callback"
+    callbackURL: "http://identiglass.quentinl.com:8080/auth/google/callback"
 	
 },
 function (accessToken, refreshToken, profile, done) {

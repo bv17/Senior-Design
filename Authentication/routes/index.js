@@ -26,7 +26,7 @@ router.get('/auth/google/callback',
   function(req, res, next) {
     // Successful authentication, redirect home.
 
-	res.redirect('/index.html');
+	res.redirect('/index.html', passport.authenticate('google',{scope: 'https://www.googleapis.com/auth/plus.me https://www.google.com/m8/feeds https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile'}));
 
   });
   
