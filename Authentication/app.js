@@ -30,10 +30,9 @@ var app = express();
 	app.use(bodyParser.json());
 	app.use(bodyParser.urlencoded({ extended: false }));
 	app.use(cookieParser());
-	app.use(express.static(__dirname + '/public'));
 	app.use('/', routes);
 	app.use('/users', users);
-	app.use(express.static(path.join(__dirname, '/public')));
+//	app.use(express.static(path.join(__dirname, '/public')));
 	app.use(passport.initialize());
 	app.use(passport.session());
 	app.use(methodOverride('X-HTTP-Method-Override'));
@@ -120,7 +119,7 @@ var server = app.listen(8080, function () {
 
 
 app.get('/', function(req, res){
-  res.render('home', {user: req.user});
+  res.render('home');
 });
 
 

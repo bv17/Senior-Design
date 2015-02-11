@@ -11,7 +11,7 @@ router.use(passport.session());
 //===============ROUTES=================
 //displays our homepage
 router.get('/', function(req, res){
-  res.render('home', {user: req.user});
+  res.render('home');
 });
 
 //displays our signup page
@@ -22,7 +22,7 @@ router.get('/signin', function(req, res){
 router.get('/auth/google', passport.authenticate('google',{scope: 'https://www.googleapis.com/auth/plus.me https://www.google.com/m8/feeds https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile'}));
 
 router.get('/auth/google/callback', 
-  passport.authenticate('google', { failureRedirect: '/login' }),
+  passport.authenticate('google', { failureRedirect: '/signin' }),
   function(req, res, next) {
     // Successful authentication, redirect home.
 
