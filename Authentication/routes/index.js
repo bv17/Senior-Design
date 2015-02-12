@@ -34,7 +34,7 @@ router.route('/upload')
 			
         });
 		faceDetect('test.jpg');
-		res.sendfile('face.jpg');
+		res.sendFile(__dirname + '/' + 'face.jpg');
 
     });
 
