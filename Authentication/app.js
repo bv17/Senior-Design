@@ -2,7 +2,6 @@
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
-var busboy = require('connect-busboy');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
@@ -14,13 +13,13 @@ var TwitterStrategy = require('passport-twitter');
 var FacebookStrategy = require('passport-facebook');
 var expressHbs = require('express3-handlebars');
 var logger = require('morgan');
+var busboy = require('connect-busboy');
 var methodOverride = require('method-override');
 var passport = require('passport');
 var fs = require('fs');
 var shelljs = require("shelljs/global");
 var sys = require("sys");
 var googleStrategy = require('passport-google-oauth').OAuth2Strategy; //Authentication
-
 
 
 //App configuration settings
@@ -40,7 +39,6 @@ var app = express();
 	app.use(methodOverride('X-HTTP-Method-Override'));
 	app.engine('hbs', expressHbs({extname:'hbs', defaultLayout:'main.hbs'}));
 	app.set('view engine', 'hbs');
-
 
 
 //Google Project Credentials	

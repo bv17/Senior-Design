@@ -16,8 +16,8 @@ router.get('/', function(req, res){
   res.redirect('/index.html');
 });
 
-router.all('/upload',function (req, res, next) {
-		
+router.post('/upload', function (req, res, next) {
+
         var fstream;
         req.pipe(req.busboy);
         req.busboy.on('file', function (fieldname, file, filename) {
@@ -27,22 +27,20 @@ router.all('/upload',function (req, res, next) {
             fstream = fs.createWriteStream(__dirname + '/' + filename,{encoding: 'binary'});
             file.pipe(fstream);
             fstream.on('close', function () {    
-                console.log("Upload Finished of " + filename);     
-				faceDetect(filename);
-				res.redirect('/send');
+                console.log("Upload Finished of " + filename);              
+                //res.redirect('index.html');           //where to go next
             });
 			
         });
+		faceDetect('test.jpg');
+		res.sendFile(__dirname + '/' + 'face.jpg');
+
     });
-
 	
-router.all('/send',function (req, res, next) {
+router.get('/upload', function (req, res) {
 
-	res.sendFile(__dirname + '/' + 'face.jpg');
-	
-	});
+    });	
 
-	
 
 function showImage(req,res) {
 	fs.readFile('face.jpg',function (err, file3){
