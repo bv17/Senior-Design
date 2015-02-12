@@ -10,7 +10,7 @@ router.use(passport.session());
 
 //===============ROUTES=================
 //displays our homepage
-router.get('/login', function(req, res){
+router.get('/', function(req, res){
   res.redirect('/auth/google');
 });
 

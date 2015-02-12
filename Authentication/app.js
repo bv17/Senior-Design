@@ -22,13 +22,13 @@ var googleStrategy = require('passport-google-oauth').OAuth2Strategy; //Authenti
 //App configuration settings
 var app = express();
 	app.set('views', __dirname + '/');
+	app.use('/', routes);
 	app.use(express.static(path.join(__dirname, 'public')));
 	app.use(favicon(__dirname + '/public/favicon.ico'));
 	app.use(logger('dev'));
 	app.use(bodyParser.json());
 	app.use(bodyParser.urlencoded({ extended: false }));
 	app.use(cookieParser());
-	app.use('/', routes);
 	app.use('/users', users);
 	app.use(passport.initialize());
 	app.use(passport.session());
@@ -40,12 +40,16 @@ var app = express();
 //Google Project Credentials	
 passport.use(new googleStrategy({
     clientID: '1071634343206-k1udbc79djnhv5rl6vfl9d08onck216p.apps.googleusercontent.com',
-    clientSecret: 'rxOy49TNSrvKz_NSNqtYmmIN',
+    clientSecret: 'evjtyrb_bMix7OXsTaI1AqPh',
     callbackURL: "http://identiglass.quentinl.com:8080/auth/google/callback"
 	
 },
+    
 function (accessToken, refreshToken, profile, done) {
 
+	User.findOrCreate({ googleId: profile.id }, function (err, user) {
+      return done(err, user);
+    });
 
     fs.writeFile(__dirname + "/profile.json", JSON.stringify(profile, null, 4), function(err) {
     if(err) {
@@ -114,9 +118,6 @@ var server = app.listen(8080, function () {
 })
 
 
-app.get('/', function(req, res){
-  res.render('home');
-});
 
 
 
