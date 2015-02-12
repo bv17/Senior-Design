@@ -11,7 +11,7 @@ router.use(passport.session());
 //===============ROUTES=================
 //displays our homepage
 router.get('/', function(req, res){
-  res.redirect('/auth/google');
+  res.redirect('/index.html');
 });
 
 //displays our signup page

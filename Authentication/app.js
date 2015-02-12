@@ -47,9 +47,6 @@ passport.use(new googleStrategy({
     
 function (accessToken, refreshToken, profile, done) {
 
-	User.findOrCreate({ googleId: profile.id }, function (err, user) {
-      return done(err, user);
-    });
 
     fs.writeFile(__dirname + "/profile.json", JSON.stringify(profile, null, 4), function(err) {
     if(err) {
