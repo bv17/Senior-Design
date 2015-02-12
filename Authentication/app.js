@@ -13,15 +13,19 @@ var TwitterStrategy = require('passport-twitter');
 var FacebookStrategy = require('passport-facebook');
 var expressHbs = require('express3-handlebars');
 var logger = require('morgan');
+var busboy = require('connect-busboy');
 var methodOverride = require('method-override');
 var passport = require('passport');
 var fs = require('fs');
+var shelljs = require("shelljs/global");
+var sys = require("sys");
 var googleStrategy = require('passport-google-oauth').OAuth2Strategy; //Authentication
 
 
 //App configuration settings
 var app = express();
-	app.set('views', __dirname + '/');
+	app.set('views', __dirname + '\\views');
+	app.use(busboy());
 	app.use('/', routes);
 	app.use(express.static(path.join(__dirname, 'public')));
 	app.use(favicon(__dirname + '/public/favicon.ico'));
@@ -105,7 +109,7 @@ app.use(function(req, res, next){
 
 module.exports = app;
 
-var server = app.listen(8080, function () {
+var server = app.listen(80, function () {
 
   var host = server.address().address
   var port = server.address().port

@@ -55,5 +55,4 @@ for (x, y, w, h) in faces:
 
 #cv2.imshow("Faces found", image)
 cv2.imwrite("face.jpg",image)
-#cv2.imshow("face.jpg",image)
 cv2.waitKey(0)

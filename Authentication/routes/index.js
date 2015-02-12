@@ -2,6 +2,8 @@ var express = require('express');
 var fs = require('fs');
 var router = express.Router();
 var passport = require('passport');
+var sys = require("sys");
+var shelljs = require("shelljs/global");
 router.use(express.static(__dirname + '/public'));
 module.exports = router;
 router.use(passport.initialize());
@@ -14,6 +16,42 @@ router.get('/', function(req, res){
   res.redirect('/index.html');
 });
 
+router.route('/upload')
+    .post(function (req, res, next) {
+
+        var fstream;
+        req.pipe(req.busboy);
+        req.busboy.on('file', function (fieldname, file, filename) {
+            console.log("Uploading: " + filename);
+
+            //Path where image will be uploaded
+            fstream = fs.createWriteStream(__dirname + '/' + filename,{encoding: 'binary'});
+            file.pipe(fstream);
+            fstream.on('close', function () {    
+                console.log("Upload Finished of " + filename);              
+                res.redirect('index.html');           //where to go next
+            });
+			
+        });
+		faceDetect('test.jpg');
+		showImage(req,res);
+
+    });
+
+function showImage(req,res) {
+	fs.readFile('face.jpg',function (err, file3){
+		var imagedata = new Buffer(file3).toString('base64');
+		res.setHeader("200", {"Content-Type": "text/html"});
+		res.write(
+			'<body>'+
+			'<img src="data:face.jpg;base64,'+imagedata+'" align="middle" />'+
+			'</body>'
+			);
+		res.end();
+		});
+}
+	
+		
 //displays our signup page
 router.get('/signin', function(req, res){
   res.render('signin');
@@ -29,7 +67,13 @@ router.get('/auth/google/callback',
 	res.redirect('/index.html');
 
   });
-  
+ 
+function faceDetect(fileName,res) {
+
+	sys.debug(fileName);
+	exec('python face_detect.py routes/' + fileName + ' haarcascade_frontalface_default.xml');	
+
+	}
    
   
 router.get('/logout', function (req, res) {
