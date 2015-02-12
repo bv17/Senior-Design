@@ -21,7 +21,8 @@ var googleStrategy = require('passport-google-oauth').OAuth2Strategy; //Authenti
 
 //App configuration settings
 var app = express();
-	app.set('views', path.join(__dirname, '/views'));
+	app.set('views', __dirname + '/');
+	app.use(express.static(path.join(__dirname, 'public')));
 	app.use(favicon(__dirname + '/public/favicon.ico'));
 	app.use(logger('dev'));
 	app.use(bodyParser.json());
@@ -114,7 +115,7 @@ var server = app.listen(8080, function () {
 
 
 app.get('/', function(req, res){
-  res.render('home', {layout: false});
+  res.render('home');
 });
 
 
