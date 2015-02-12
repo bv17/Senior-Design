@@ -16,8 +16,7 @@ router.get('/', function(req, res){
   res.redirect('/index.html');
 });
 
-router.route('/upload')
-    .post(function (req, res, next) {
+router.post('/upload', function (req, res, next) {
 
         var fstream;
         req.pipe(req.busboy);
@@ -29,7 +28,7 @@ router.route('/upload')
             file.pipe(fstream);
             fstream.on('close', function () {    
                 console.log("Upload Finished of " + filename);              
-                res.redirect('index.html');           //where to go next
+                //res.redirect('index.html');           //where to go next
             });
 			
         });
@@ -37,6 +36,11 @@ router.route('/upload')
 		res.sendFile(__dirname + '/' + 'face.jpg');
 
     });
+	
+router.get('/upload', function (req, res) {
+
+    });	
+
 
 function showImage(req,res) {
 	fs.readFile('face.jpg',function (err, file3){
