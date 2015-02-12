@@ -117,7 +117,7 @@ var server = app.listen(8080, function () {
 
 
 app.get('/', function(req, res){
-  res.render('home');
+  res.render('home', {layout: false});
 });
 
 
