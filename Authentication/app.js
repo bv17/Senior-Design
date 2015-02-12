@@ -11,16 +11,13 @@ var logger = require('morgan');
 var LocalStrategy = require('passport-local');
 var TwitterStrategy = require('passport-twitter');
 var FacebookStrategy = require('passport-facebook');
-var exphbs = require('express3-handlebars');
+var expressHbs = require('express3-handlebars');
 var logger = require('morgan');
 var methodOverride = require('method-override');
 var passport = require('passport');
 var fs = require('fs');
 var googleStrategy = require('passport-google-oauth').OAuth2Strategy; //Authentication
 
-var hbs = exphbs.create({
-    defaultLayout: 'main'
-});
 
 //App configuration settings
 var app = express();
@@ -35,8 +32,8 @@ var app = express();
 	app.use(passport.initialize());
 	app.use(passport.session());
 	app.use(methodOverride('X-HTTP-Method-Override'));
-	app.engine('handlebars', hbs.engine);
-	app.set('view engine', 'handlebars');
+	app.engine('hbs', expressHbs({extname:'hbs', defaultLayout:'main.hbs'}));
+	app.set('view engine', 'hbs');
 
 
 //Google Project Credentials	
