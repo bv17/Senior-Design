@@ -1,0 +1,501 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files (x86)\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'express4-handlebars' ]
+2 info using npm@1.2.18
+3 info using node@v0.10.5
+4 verbose node symlink C:\Program Files (x86)\nodejs\\node.exe
+5 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\package.json
+6 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\acorn\package.json
+7 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\bcryptjs\package.json
+8 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\body-parser\package.json
+9 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\busboy\package.json
+10 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\connect\package.json
+11 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\connect-busboy\package.json
+12 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\consolidate\package.json
+13 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\cookie-parser\package.json
+14 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\db\package.json
+15 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\ejs\package.json
+16 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\express\package.json
+17 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\express-generator\package.json
+18 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\express-session\package.json
+19 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\express3-handlebars\package.json
+20 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\faye\package.json
+21 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\forms\package.json
+22 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\fs.extra\package.json
+23 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\handlebars\package.json
+24 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\html\package.json
+25 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\jade\package.json
+26 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\json\package.json
+27 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\method-override\package.json
+28 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\morgan\package.json
+29 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\multer\package.json
+30 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\passport\package.json
+31 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\passport-facebook\package.json
+32 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\passport-google\package.json
+33 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\passport-google-oauth\package.json
+34 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\passport-local\package.json
+35 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\passport-twitter\package.json
+36 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\select\package.json
+37 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\serve-favicon\package.json
+38 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\serve-static\package.json
+39 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\shelljs\package.json
+40 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\url-template\package.json
+41 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\package.json
+42 verbose cache add [ 'express4-handlebars', null ]
+43 verbose cache add name=undefined spec="express4-handlebars" args=["express4-handlebars",null]
+44 verbose parsed url { protocol: null,
+44 verbose parsed url   slashes: null,
+44 verbose parsed url   auth: null,
+44 verbose parsed url   host: null,
+44 verbose parsed url   port: null,
+44 verbose parsed url   hostname: null,
+44 verbose parsed url   hash: null,
+44 verbose parsed url   search: null,
+44 verbose parsed url   query: null,
+44 verbose parsed url   pathname: 'express4-handlebars',
+44 verbose parsed url   path: 'express4-handlebars',
+44 verbose parsed url   href: 'express4-handlebars' }
+45 silly lockFile 6eda58e8-express4-handlebars express4-handlebars
+46 verbose lock express4-handlebars C:\Users\Bill\AppData\Roaming\npm-cache\6eda58e8-express4-handlebars.lock
+47 silly lockFile 6eda58e8-express4-handlebars express4-handlebars
+48 silly lockFile 6eda58e8-express4-handlebars express4-handlebars
+49 verbose addNamed [ 'express4-handlebars', '' ]
+50 verbose addNamed [ null, '' ]
+51 silly lockFile f3bbc40d-express4-handlebars express4-handlebars@
+52 verbose lock express4-handlebars@ C:\Users\Bill\AppData\Roaming\npm-cache\f3bbc40d-express4-handlebars.lock
+53 silly addNameRange { name: 'express4-handlebars', range: '', hasData: false }
+54 verbose url raw express4-handlebars
+55 verbose url resolving [ 'https://registry.npmjs.org/', './express4-handlebars' ]
+56 verbose url resolved https://registry.npmjs.org/express4-handlebars
+57 info trying registry request attempt 1 at 19:00:00
+58 verbose etag "A8EC1QP9XM5CS0YFBJR1UHUQH"
+59 http GET https://registry.npmjs.org/express4-handlebars
+60 http 304 https://registry.npmjs.org/express4-handlebars
+61 silly registry.get cb [ 304,
+61 silly registry.get   { date: 'Thu, 12 Feb 2015 00:00:10 GMT',
+61 silly registry.get     server: 'Apache',
+61 silly registry.get     via: '1.1 varnish',
+61 silly registry.get     'last-modified': 'Thu, 12 Feb 2015 00:00:10 GMT',
+61 silly registry.get     'cache-control': 'max-age=60',
+61 silly registry.get     etag: '"A8EC1QP9XM5CS0YFBJR1UHUQH"',
+61 silly registry.get     age: '0',
+61 silly registry.get     'x-served-by': 'cache-jfk1026-JFK',
+61 silly registry.get     'x-cache': 'MISS',
+61 silly registry.get     'x-cache-hits': '0',
+61 silly registry.get     'x-timer': 'S1423699210.203441,VS0,VE443',
+61 silly registry.get     vary: 'Accept',
+61 silly registry.get     'content-length': '0',
+61 silly registry.get     'keep-alive': 'timeout=10, max=50',
+61 silly registry.get     connection: 'Keep-Alive' } ]
+62 verbose etag express4-handlebars from cache
+63 silly addNameRange number 2 { name: 'express4-handlebars', range: '', hasData: true }
+64 silly addNameRange versions [ 'express4-handlebars',
+64 silly addNameRange   [ '0.1.0',
+64 silly addNameRange     '0.1.1',
+64 silly addNameRange     '0.1.2',
+64 silly addNameRange     '0.1.3',
+64 silly addNameRange     '0.1.4',
+64 silly addNameRange     '0.1.5',
+64 silly addNameRange     '0.1.7',
+64 silly addNameRange     '0.1.8',
+64 silly addNameRange     '0.2.0' ] ]
+65 verbose addNamed [ 'express4-handlebars', '0.2.0' ]
+66 verbose addNamed [ '0.2.0', '0.2.0' ]
+67 silly lockFile f85f8bd0-express4-handlebars-0-2-0 express4-handlebars@0.2.0
+68 verbose lock express4-handlebars@0.2.0 C:\Users\Bill\AppData\Roaming\npm-cache\f85f8bd0-express4-handlebars-0-2-0.lock
+69 verbose read json C:\Users\Bill\AppData\Roaming\npm-cache\express4-handlebars\0.2.0\package\package.json
+70 silly lockFile f85f8bd0-express4-handlebars-0-2-0 express4-handlebars@0.2.0
+71 silly lockFile f85f8bd0-express4-handlebars-0-2-0 express4-handlebars@0.2.0
+72 silly lockFile f3bbc40d-express4-handlebars express4-handlebars@
+73 silly lockFile f3bbc40d-express4-handlebars express4-handlebars@
+74 silly resolved [ { name: 'express4-handlebars',
+74 silly resolved     version: '0.2.0',
+74 silly resolved     description: 'handelbars 2 support in express4 ',
+74 silly resolved     main: 'index.js',
+74 silly resolved     scripts:
+74 silly resolved      { test: 'node node_modules/gulp/bin/gulp test',
+74 silly resolved        compile: 'node node_modules/gulp/bin/gulp compile' },
+74 silly resolved     repository:
+74 silly resolved      { type: 'git',
+74 silly resolved        url: 'ssh://git@github.com/gsmlg/express-handlebars' },
+74 silly resolved     keywords:
+74 silly resolved      [ 'handlebars',
+74 silly resolved        'express',
+74 silly resolved        'express4-handlebars2',
+74 silly resolved        'express4',
+74 silly resolved        'handlebars2',
+74 silly resolved        'hbs' ],
+74 silly resolved     author: { name: 'gsmlg' },
+74 silly resolved     license: 'GPLv3',
+74 silly resolved     bugs: { url: 'https://github.com/gsmlg/express-handlebars/issues' },
+74 silly resolved     homepage: 'https://github.com/gsmlg/express-handlebars',
+74 silly resolved     dependencies:
+74 silly resolved      { express: '^4.5.0',
+74 silly resolved        glob: '^4.0.3',
+74 silly resolved        async: '^0.9.0',
+74 silly resolved        handlebars: '^2.0.0',
+74 silly resolved        underscore: '^1.6.0' },
+74 silly resolved     devDependencies:
+74 silly resolved      { 'coffee-script': '^1.7.1',
+74 silly resolved        gulp: '^3.8.5',
+74 silly resolved        mocha: '^1.20.1',
+74 silly resolved        should: '^4.0.4' },
+74 silly resolved     readme: 'express-handlebars\n==================\n\nexpress-handlebars for my express web\n\n## Install\n```\nnpm install express4-handlebars\n```\n\n## Settings\n```\n  engine = require \'express4-handlebars\'\n  extname = engine.get \'extname\'\n\n  app.engine extname, engine.__express\n  app.set \'view engine\', extname\n\n  engine.set \'layout_dir\', join(views_path, \'layout\')\n  engine.set \'partials_dir\', join(views_path, \'partials\')\n  engine.set \'useLayout\', true\n  engine.set \'layout\', \'layout\'\n\n```\n\n## Feature\nAuto load partials in partials_dir.\nIf useLayout is true will auto load layout.\n```\napp.get \'/\', (req, res)->\n  res.render \'index\', {\n    layout: \'layout\' # use false to disable layout\n    # or like this `partials: { headbar: \'headbar-dark\' }`\n    partials: [\'headbar\'] # This will load partials from where index view in\n  }\n```\n\n## Todos\n- Replace express\'s View engine.\n- Precompile all templates.\n- Serve client side template for precompile.\n',
+74 silly resolved     readmeFilename: 'README.md',
+74 silly resolved     _id: 'express4-handlebars@0.2.0',
+74 silly resolved     _from: 'express4-handlebars@' } ]
+75 info install express4-handlebars@0.2.0 into C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication
+76 info installOne express4-handlebars@0.2.0
+77 verbose from cache C:\Users\Bill\AppData\Roaming\npm-cache\express4-handlebars\0.2.0\package\package.json
+78 info C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\express4-handlebars unbuild
+79 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\express4-handlebars\package.json
+80 verbose tar unpack C:\Users\Bill\AppData\Roaming\npm-cache\express4-handlebars\0.2.0\package.tgz
+81 silly lockFile b3aaeb90-node-modules-express4-handlebars C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\express4-handlebars
+82 verbose lock C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\express4-handlebars C:\Users\Bill\AppData\Roaming\npm-cache\b3aaeb90-node-modules-express4-handlebars.lock
+83 silly lockFile 74157525-ss4-handlebars-0-2-0-package-tgz C:\Users\Bill\AppData\Roaming\npm-cache\express4-handlebars\0.2.0\package.tgz
+84 verbose lock C:\Users\Bill\AppData\Roaming\npm-cache\express4-handlebars\0.2.0\package.tgz C:\Users\Bill\AppData\Roaming\npm-cache\74157525-ss4-handlebars-0-2-0-package-tgz.lock
+85 silly gunzTarPerm modes [ '755', '644' ]
+86 silly gunzTarPerm extractEntry package.json
+87 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+88 silly gunzTarPerm extractEntry .npmignore
+89 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+90 silly gunzTarPerm extractEntry README.md
+91 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+92 silly gunzTarPerm extractEntry LICENSE
+93 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+94 silly gunzTarPerm extractEntry index.js
+95 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+96 silly gunzTarPerm extractEntry gulpfile.coffee
+97 silly gunzTarPerm modified mode [ 'gulpfile.coffee', 438, 420 ]
+98 silly gunzTarPerm extractEntry lib/engine.js
+99 silly gunzTarPerm modified mode [ 'lib/engine.js', 438, 420 ]
+100 silly gunzTarPerm extractEntry lib/express-handlebars.js
+101 silly gunzTarPerm modified mode [ 'lib/express-handlebars.js', 438, 420 ]
+102 silly gunzTarPerm extractEntry lib/view.js
+103 silly gunzTarPerm modified mode [ 'lib/view.js', 438, 420 ]
+104 verbose read json C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\express4-handlebars\package.json
+105 silly lockFile b3aaeb90-node-modules-express4-handlebars C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\express4-handlebars
+106 silly lockFile b3aaeb90-node-modules-express4-handlebars C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\express4-handlebars
+107 silly lockFile 74157525-ss4-handlebars-0-2-0-package-tgz C:\Users\Bill\AppData\Roaming\npm-cache\express4-handlebars\0.2.0\package.tgz
+108 silly lockFile 74157525-ss4-handlebars-0-2-0-package-tgz C:\Users\Bill\AppData\Roaming\npm-cache\express4-handlebars\0.2.0\package.tgz
+109 info preinstall express4-handlebars@0.2.0
+110 verbose from cache C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\express4-handlebars\package.json
+111 verbose readDependencies using package.json deps
+112 verbose from cache C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\express4-handlebars\package.json
+113 verbose readDependencies using package.json deps
+114 verbose cache add [ 'express@^4.5.0', null ]
+115 verbose cache add name=undefined spec="express@^4.5.0" args=["express@^4.5.0",null]
+116 verbose parsed url { protocol: null,
+116 verbose parsed url   slashes: null,
+116 verbose parsed url   auth: null,
+116 verbose parsed url   host: null,
+116 verbose parsed url   port: null,
+116 verbose parsed url   hostname: null,
+116 verbose parsed url   hash: null,
+116 verbose parsed url   search: null,
+116 verbose parsed url   query: null,
+116 verbose parsed url   pathname: 'express@^4.5.0',
+116 verbose parsed url   path: 'express@^4.5.0',
+116 verbose parsed url   href: 'express@^4.5.0' }
+117 verbose cache add name="express" spec="^4.5.0" args=["express","^4.5.0"]
+118 verbose parsed url { protocol: null,
+118 verbose parsed url   slashes: null,
+118 verbose parsed url   auth: null,
+118 verbose parsed url   host: null,
+118 verbose parsed url   port: null,
+118 verbose parsed url   hostname: null,
+118 verbose parsed url   hash: null,
+118 verbose parsed url   search: null,
+118 verbose parsed url   query: null,
+118 verbose parsed url   pathname: '^4.5.0',
+118 verbose parsed url   path: '^4.5.0',
+118 verbose parsed url   href: '^4.5.0' }
+119 verbose addNamed [ 'express', '^4.5.0' ]
+120 verbose addNamed [ null, null ]
+121 silly lockFile a6bfa86c-express-4-5-0 express@^4.5.0
+122 verbose lock express@^4.5.0 C:\Users\Bill\AppData\Roaming\npm-cache\a6bfa86c-express-4-5-0.lock
+123 verbose cache add [ 'glob@^4.0.3', null ]
+124 verbose cache add name=undefined spec="glob@^4.0.3" args=["glob@^4.0.3",null]
+125 verbose parsed url { protocol: null,
+125 verbose parsed url   slashes: null,
+125 verbose parsed url   auth: null,
+125 verbose parsed url   host: null,
+125 verbose parsed url   port: null,
+125 verbose parsed url   hostname: null,
+125 verbose parsed url   hash: null,
+125 verbose parsed url   search: null,
+125 verbose parsed url   query: null,
+125 verbose parsed url   pathname: 'glob@^4.0.3',
+125 verbose parsed url   path: 'glob@^4.0.3',
+125 verbose parsed url   href: 'glob@^4.0.3' }
+126 verbose cache add name="glob" spec="^4.0.3" args=["glob","^4.0.3"]
+127 verbose parsed url { protocol: null,
+127 verbose parsed url   slashes: null,
+127 verbose parsed url   auth: null,
+127 verbose parsed url   host: null,
+127 verbose parsed url   port: null,
+127 verbose parsed url   hostname: null,
+127 verbose parsed url   hash: null,
+127 verbose parsed url   search: null,
+127 verbose parsed url   query: null,
+127 verbose parsed url   pathname: '^4.0.3',
+127 verbose parsed url   path: '^4.0.3',
+127 verbose parsed url   href: '^4.0.3' }
+128 verbose addNamed [ 'glob', '^4.0.3' ]
+129 verbose addNamed [ null, null ]
+130 silly lockFile 751cfa04-glob-4-0-3 glob@^4.0.3
+131 verbose lock glob@^4.0.3 C:\Users\Bill\AppData\Roaming\npm-cache\751cfa04-glob-4-0-3.lock
+132 verbose cache add [ 'async@^0.9.0', null ]
+133 verbose cache add name=undefined spec="async@^0.9.0" args=["async@^0.9.0",null]
+134 verbose parsed url { protocol: null,
+134 verbose parsed url   slashes: null,
+134 verbose parsed url   auth: null,
+134 verbose parsed url   host: null,
+134 verbose parsed url   port: null,
+134 verbose parsed url   hostname: null,
+134 verbose parsed url   hash: null,
+134 verbose parsed url   search: null,
+134 verbose parsed url   query: null,
+134 verbose parsed url   pathname: 'async@^0.9.0',
+134 verbose parsed url   path: 'async@^0.9.0',
+134 verbose parsed url   href: 'async@^0.9.0' }
+135 verbose cache add name="async" spec="^0.9.0" args=["async","^0.9.0"]
+136 verbose parsed url { protocol: null,
+136 verbose parsed url   slashes: null,
+136 verbose parsed url   auth: null,
+136 verbose parsed url   host: null,
+136 verbose parsed url   port: null,
+136 verbose parsed url   hostname: null,
+136 verbose parsed url   hash: null,
+136 verbose parsed url   search: null,
+136 verbose parsed url   query: null,
+136 verbose parsed url   pathname: '^0.9.0',
+136 verbose parsed url   path: '^0.9.0',
+136 verbose parsed url   href: '^0.9.0' }
+137 verbose addNamed [ 'async', '^0.9.0' ]
+138 verbose addNamed [ null, null ]
+139 silly lockFile 7f39d2c2-async-0-9-0 async@^0.9.0
+140 verbose lock async@^0.9.0 C:\Users\Bill\AppData\Roaming\npm-cache\7f39d2c2-async-0-9-0.lock
+141 verbose cache add [ 'handlebars@^2.0.0', null ]
+142 verbose cache add name=undefined spec="handlebars@^2.0.0" args=["handlebars@^2.0.0",null]
+143 verbose parsed url { protocol: null,
+143 verbose parsed url   slashes: null,
+143 verbose parsed url   auth: null,
+143 verbose parsed url   host: null,
+143 verbose parsed url   port: null,
+143 verbose parsed url   hostname: null,
+143 verbose parsed url   hash: null,
+143 verbose parsed url   search: null,
+143 verbose parsed url   query: null,
+143 verbose parsed url   pathname: 'handlebars@^2.0.0',
+143 verbose parsed url   path: 'handlebars@^2.0.0',
+143 verbose parsed url   href: 'handlebars@^2.0.0' }
+144 verbose cache add name="handlebars" spec="^2.0.0" args=["handlebars","^2.0.0"]
+145 verbose parsed url { protocol: null,
+145 verbose parsed url   slashes: null,
+145 verbose parsed url   auth: null,
+145 verbose parsed url   host: null,
+145 verbose parsed url   port: null,
+145 verbose parsed url   hostname: null,
+145 verbose parsed url   hash: null,
+145 verbose parsed url   search: null,
+145 verbose parsed url   query: null,
+145 verbose parsed url   pathname: '^2.0.0',
+145 verbose parsed url   path: '^2.0.0',
+145 verbose parsed url   href: '^2.0.0' }
+146 verbose addNamed [ 'handlebars', '^2.0.0' ]
+147 verbose addNamed [ null, null ]
+148 silly lockFile 0eb14452-handlebars-2-0-0 handlebars@^2.0.0
+149 verbose lock handlebars@^2.0.0 C:\Users\Bill\AppData\Roaming\npm-cache\0eb14452-handlebars-2-0-0.lock
+150 verbose cache add [ 'underscore@^1.6.0', null ]
+151 verbose cache add name=undefined spec="underscore@^1.6.0" args=["underscore@^1.6.0",null]
+152 verbose parsed url { protocol: null,
+152 verbose parsed url   slashes: null,
+152 verbose parsed url   auth: null,
+152 verbose parsed url   host: null,
+152 verbose parsed url   port: null,
+152 verbose parsed url   hostname: null,
+152 verbose parsed url   hash: null,
+152 verbose parsed url   search: null,
+152 verbose parsed url   query: null,
+152 verbose parsed url   pathname: 'underscore@^1.6.0',
+152 verbose parsed url   path: 'underscore@^1.6.0',
+152 verbose parsed url   href: 'underscore@^1.6.0' }
+153 verbose cache add name="underscore" spec="^1.6.0" args=["underscore","^1.6.0"]
+154 verbose parsed url { protocol: null,
+154 verbose parsed url   slashes: null,
+154 verbose parsed url   auth: null,
+154 verbose parsed url   host: null,
+154 verbose parsed url   port: null,
+154 verbose parsed url   hostname: null,
+154 verbose parsed url   hash: null,
+154 verbose parsed url   search: null,
+154 verbose parsed url   query: null,
+154 verbose parsed url   pathname: '^1.6.0',
+154 verbose parsed url   path: '^1.6.0',
+154 verbose parsed url   href: '^1.6.0' }
+155 verbose addNamed [ 'underscore', '^1.6.0' ]
+156 verbose addNamed [ null, null ]
+157 silly lockFile 523107c6-underscore-1-6-0 underscore@^1.6.0
+158 verbose lock underscore@^1.6.0 C:\Users\Bill\AppData\Roaming\npm-cache\523107c6-underscore-1-6-0.lock
+159 info addNameTag [ 'express', '^4.5.0' ]
+160 info addNameTag [ 'glob', '^4.0.3' ]
+161 info addNameTag [ 'async', '^0.9.0' ]
+162 info addNameTag [ 'handlebars', '^2.0.0' ]
+163 info addNameTag [ 'underscore', '^1.6.0' ]
+164 verbose url raw glob
+165 verbose url resolving [ 'https://registry.npmjs.org/', './glob' ]
+166 verbose url resolved https://registry.npmjs.org/glob
+167 info trying registry request attempt 1 at 19:00:00
+168 verbose etag "H8VENKCJV0DFZUFIYXFDAE5I"
+169 http GET https://registry.npmjs.org/glob
+170 verbose url raw async
+171 verbose url resolving [ 'https://registry.npmjs.org/', './async' ]
+172 verbose url resolved https://registry.npmjs.org/async
+173 info trying registry request attempt 1 at 19:00:00
+174 verbose etag "ABVCLMQOA04P0W9LWS6Y5HNH9"
+175 http GET https://registry.npmjs.org/async
+176 verbose url raw underscore
+177 verbose url resolving [ 'https://registry.npmjs.org/', './underscore' ]
+178 verbose url resolved https://registry.npmjs.org/underscore
+179 info trying registry request attempt 1 at 19:00:00
+180 verbose etag "356VQBSLUXCUYF1C109LAJDYZ"
+181 http GET https://registry.npmjs.org/underscore
+182 verbose url raw handlebars
+183 verbose url resolving [ 'https://registry.npmjs.org/', './handlebars' ]
+184 verbose url resolved https://registry.npmjs.org/handlebars
+185 info trying registry request attempt 1 at 19:00:00
+186 verbose etag "2K2G9IT6QDQJ8FN91CMNH49EH"
+187 http GET https://registry.npmjs.org/handlebars
+188 verbose url raw express
+189 verbose url resolving [ 'https://registry.npmjs.org/', './express' ]
+190 verbose url resolved https://registry.npmjs.org/express
+191 info trying registry request attempt 1 at 19:00:00
+192 verbose etag "O516QA0W7KS2LHG8CH4Q37I0"
+193 http GET https://registry.npmjs.org/express
+194 http 304 https://registry.npmjs.org/glob
+195 silly registry.get cb [ 304,
+195 silly registry.get   { date: 'Thu, 12 Feb 2015 00:00:10 GMT',
+195 silly registry.get     server: 'Apache',
+195 silly registry.get     via: '1.1 varnish',
+195 silly registry.get     'last-modified': 'Wed, 11 Feb 2015 23:59:16 GMT',
+195 silly registry.get     'cache-control': 'max-age=60',
+195 silly registry.get     etag: '"H8VENKCJV0DFZUFIYXFDAE5I"',
+195 silly registry.get     age: '56',
+195 silly registry.get     'x-served-by': 'cache-jfk1034-JFK',
+195 silly registry.get     'x-cache': 'HIT',
+195 silly registry.get     'x-cache-hits': '4',
+195 silly registry.get     'x-timer': 'S1423699210.934586,VS0,VE0',
+195 silly registry.get     vary: 'Accept',
+195 silly registry.get     'content-length': '0',
+195 silly registry.get     'keep-alive': 'timeout=10, max=50',
+195 silly registry.get     connection: 'Keep-Alive' } ]
+196 verbose etag glob from cache
+197 http 304 https://registry.npmjs.org/async
+198 silly registry.get cb [ 304,
+198 silly registry.get   { date: 'Thu, 12 Feb 2015 00:00:10 GMT',
+198 silly registry.get     server: 'Apache',
+198 silly registry.get     via: '1.1 varnish',
+198 silly registry.get     'last-modified': 'Wed, 11 Feb 2015 23:59:26 GMT',
+198 silly registry.get     'cache-control': 'max-age=60',
+198 silly registry.get     etag: '"ABVCLMQOA04P0W9LWS6Y5HNH9"',
+198 silly registry.get     age: '45',
+198 silly registry.get     'x-served-by': 'cache-jfk1023-JFK',
+198 silly registry.get     'x-cache': 'HIT',
+198 silly registry.get     'x-cache-hits': '3',
+198 silly registry.get     'x-timer': 'S1423699210.937282,VS0,VE0',
+198 silly registry.get     vary: 'Accept',
+198 silly registry.get     'content-length': '0',
+198 silly registry.get     'keep-alive': 'timeout=10, max=50',
+198 silly registry.get     connection: 'Keep-Alive' } ]
+199 verbose etag async from cache
+200 http 304 https://registry.npmjs.org/handlebars
+201 silly registry.get cb [ 304,
+201 silly registry.get   { date: 'Thu, 12 Feb 2015 00:00:10 GMT',
+201 silly registry.get     server: 'Apache',
+201 silly registry.get     via: '1.1 varnish',
+201 silly registry.get     'last-modified': 'Wed, 11 Feb 2015 23:59:45 GMT',
+201 silly registry.get     'cache-control': 'max-age=60',
+201 silly registry.get     etag: '"2K2G9IT6QDQJ8FN91CMNH49EH"',
+201 silly registry.get     age: '44',
+201 silly registry.get     'x-served-by': 'cache-jfk1032-JFK',
+201 silly registry.get     'x-cache': 'HIT',
+201 silly registry.get     'x-cache-hits': '2',
+201 silly registry.get     'x-timer': 'S1423699210.936883,VS0,VE0',
+201 silly registry.get     vary: 'Accept',
+201 silly registry.get     'content-length': '0',
+201 silly registry.get     'keep-alive': 'timeout=10, max=50',
+201 silly registry.get     connection: 'Keep-Alive' } ]
+202 verbose etag handlebars from cache
+203 http 304 https://registry.npmjs.org/express
+204 silly registry.get cb [ 304,
+204 silly registry.get   { date: 'Thu, 12 Feb 2015 00:00:10 GMT',
+204 silly registry.get     server: 'Apache',
+204 silly registry.get     via: '1.1 varnish',
+204 silly registry.get     'last-modified': 'Thu, 12 Feb 2015 00:00:06 GMT',
+204 silly registry.get     'cache-control': 'max-age=60',
+204 silly registry.get     etag: '"O516QA0W7KS2LHG8CH4Q37I0"',
+204 silly registry.get     age: '41',
+204 silly registry.get     'x-served-by': 'cache-jfk1034-JFK',
+204 silly registry.get     'x-cache': 'HIT',
+204 silly registry.get     'x-cache-hits': '2',
+204 silly registry.get     'x-timer': 'S1423699210.936857,VS0,VE0',
+204 silly registry.get     vary: 'Accept',
+204 silly registry.get     'content-length': '0',
+204 silly registry.get     'keep-alive': 'timeout=10, max=50',
+204 silly registry.get     connection: 'Keep-Alive' } ]
+205 verbose etag express from cache
+206 http 304 https://registry.npmjs.org/underscore
+207 silly registry.get cb [ 304,
+207 silly registry.get   { date: 'Thu, 12 Feb 2015 00:00:10 GMT',
+207 silly registry.get     server: 'Apache',
+207 silly registry.get     via: '1.1 varnish',
+207 silly registry.get     'last-modified': 'Wed, 11 Feb 2015 23:59:52 GMT',
+207 silly registry.get     'cache-control': 'max-age=60',
+207 silly registry.get     etag: '"356VQBSLUXCUYF1C109LAJDYZ"',
+207 silly registry.get     age: '20',
+207 silly registry.get     'x-served-by': 'cache-jfk1033-JFK',
+207 silly registry.get     'x-cache': 'HIT',
+207 silly registry.get     'x-cache-hits': '2',
+207 silly registry.get     'x-timer': 'S1423699210.940890,VS0,VE0',
+207 silly registry.get     vary: 'Accept',
+207 silly registry.get     'content-length': '0',
+207 silly registry.get     'keep-alive': 'timeout=10, max=50',
+207 silly registry.get     connection: 'Keep-Alive' } ]
+208 verbose etag underscore from cache
+209 silly lockFile 0eb14452-handlebars-2-0-0 handlebars@^2.0.0
+210 silly lockFile 0eb14452-handlebars-2-0-0 handlebars@^2.0.0
+211 silly lockFile a6bfa86c-express-4-5-0 express@^4.5.0
+212 silly lockFile a6bfa86c-express-4-5-0 express@^4.5.0
+213 silly lockFile 751cfa04-glob-4-0-3 glob@^4.0.3
+214 silly lockFile 751cfa04-glob-4-0-3 glob@^4.0.3
+215 silly lockFile 523107c6-underscore-1-6-0 underscore@^1.6.0
+216 silly lockFile 523107c6-underscore-1-6-0 underscore@^1.6.0
+217 silly lockFile 7f39d2c2-async-0-9-0 async@^0.9.0
+218 silly lockFile 7f39d2c2-async-0-9-0 async@^0.9.0
+219 verbose about to build C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\express4-handlebars
+220 info C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\express4-handlebars unbuild
+221 verbose from cache C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules\express4-handlebars\package.json
+222 info preuninstall express4-handlebars@0.2.0
+223 info uninstall express4-handlebars@0.2.0
+224 verbose true,C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules,C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication\node_modules unbuild express4-handlebars@0.2.0
+225 info postuninstall express4-handlebars@0.2.0
+226 error Error: No compatible version found: glob@'^4.0.3'
+226 error Valid install targets:
+226 error ["1.1.0","2.0.9","2.0.8","2.0.7","2.1.0","3.0.0","3.0.1","3.1.0","3.1.1","3.1.2","3.1.3","3.1.4","3.1.5","3.1.6","3.1.7","3.1.9","3.1.10","3.1.11","3.1.12","3.1.13","3.1.14","3.1.15","3.1.16","3.1.17","3.1.18","3.1.19","3.1.20","3.1.21","3.2.0","3.2.1","3.2.3","3.2.4","3.2.5","3.2.6","3.2.7","3.2.8","3.2.9","3.2.10","3.2.11","4.0.0","4.0.1","4.0.2","4.0.3","4.0.4","4.0.5","4.0.6","4.1.2-beta","4.1.2","4.1.3","4.1.4","4.1.5","4.1.6","4.2.0","4.2.1","4.2.2","4.3.0","4.3.1","4.3.2","4.3.3","4.3.4","4.3.5"]
+226 error     at installTargetsError (C:\Program Files (x86)\nodejs\node_modules\npm\lib\cache.js:685:10)
+226 error     at C:\Program Files (x86)\nodejs\node_modules\npm\lib\cache.js:607:10
+226 error     at saved (C:\Program Files (x86)\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\get.js:138:7)
+226 error     at Object.oncomplete (fs.js:107:15)
+227 error If you need help, you may report this log at:
+227 error     <http://github.com/isaacs/npm/issues>
+227 error or email it to:
+227 error     <npm-@googlegroups.com>
+228 error System Windows_NT 6.1.7601
+229 error command "C:\\Program Files (x86)\\nodejs\\\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "express4-handlebars"
+230 error cwd C:\Users\Bill\Documents\GitHub\Senior-Design\Authentication
+231 error node -v v0.10.5
+232 error npm -v 1.2.18
+233 verbose exit [ 1, true ]

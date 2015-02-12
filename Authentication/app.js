@@ -19,7 +19,7 @@ var fs = require('fs');
 var googleStrategy = require('passport-google-oauth').OAuth2Strategy; //Authentication
 
 var hbs = exphbs.create({
-    defaultLayout: 'main', 
+    defaultLayout: 'main'
 });
 
 //App configuration settings
@@ -32,12 +32,10 @@ var app = express();
 	app.use(cookieParser());
 	app.use('/', routes);
 	app.use('/users', users);
-//	app.use(express.static(path.join(__dirname, '/public')));
 	app.use(passport.initialize());
 	app.use(passport.session());
 	app.use(methodOverride('X-HTTP-Method-Override'));
 	app.engine('handlebars', hbs.engine);
-	app.set('views', __dirname + '/views');
 	app.set('view engine', 'handlebars');
 
 
