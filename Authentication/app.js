@@ -11,44 +11,44 @@ var logger = require('morgan');
 var LocalStrategy = require('passport-local');
 var TwitterStrategy = require('passport-twitter');
 var FacebookStrategy = require('passport-facebook');
-var exphbs = require('express3-handlebars');
+var expressHbs = require('express3-handlebars');
 var logger = require('morgan');
+var busboy = require('connect-busboy');
 var methodOverride = require('method-override');
 var passport = require('passport');
 var fs = require('fs');
+var shelljs = require("shelljs/global");
+var sys = require("sys");
 var googleStrategy = require('passport-google-oauth').OAuth2Strategy; //Authentication
 
-var hbs = exphbs.create({
-    defaultLayout: 'main', 
-});
 
 //App configuration settings
 var app = express();
-	app.set('views', path.join(__dirname, '/views'));
+	app.set('views', __dirname + '\\views');
+	app.use(busboy());
+	app.use('/', routes);
+	app.use(express.static(path.join(__dirname, 'public')));
 	app.use(favicon(__dirname + '/public/favicon.ico'));
 	app.use(logger('dev'));
 	app.use(bodyParser.json());
 	app.use(bodyParser.urlencoded({ extended: false }));
 	app.use(cookieParser());
-	app.use(express.static(__dirname + '/public'));
-	app.use('/', routes);
 	app.use('/users', users);
-	app.use(express.static(path.join(__dirname, '/public')));
 	app.use(passport.initialize());
 	app.use(passport.session());
 	app.use(methodOverride('X-HTTP-Method-Override'));
-	app.engine('handlebars', hbs.engine);
-	app.set('views', __dirname + '/views');
-	app.set('view engine', 'handlebars');
+	app.engine('hbs', expressHbs({extname:'hbs', defaultLayout:'main.hbs'}));
+	app.set('view engine', 'hbs');
 
 
 //Google Project Credentials	
 passport.use(new googleStrategy({
     clientID: '1071634343206-k1udbc79djnhv5rl6vfl9d08onck216p.apps.googleusercontent.com',
-    clientSecret: 'rxOy49TNSrvKz_NSNqtYmmIN',
+    clientSecret: 'evjtyrb_bMix7OXsTaI1AqPh',
     callbackURL: "http://identiglass.quentinl.com:8080/auth/google/callback"
 	
 },
+    
 function (accessToken, refreshToken, profile, done) {
 
 
@@ -119,9 +119,6 @@ var server = app.listen(8080, function () {
 })
 
 
-app.get('/', function(req, res){
-  res.render('home', {user: req.user});
-});
 
 
 
