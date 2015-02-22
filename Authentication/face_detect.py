@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import cv2
 import sys
+import sys
 
 # Get user supplied values
 imagePath = sys.argv[1]
@@ -14,7 +15,6 @@ faceCascade = cv2.CascadeClassifier(cascPath)
 # Read the image
 image = cv2.imread(imagePath)
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-
 
 # Detect faces in the image
 for i in range(1,10):
@@ -53,7 +53,5 @@ print "The minimum number of faces is {0}!".format(len(faces))
 for (x, y, w, h) in faces:
     cv2.rectangle(image, (x, y), (x+w, y+h), (0, 255, 0), 2)
 
-#cv2.imshow("Faces found", image)
-cv2.imwrite("face.jpg",image)
-#cv2.imshow("face.jpg",image)
+cv2.imwrite("routes/face.jpg",image)
 cv2.waitKey(0)
